@@ -16,6 +16,8 @@
 		5B0A53F9262C7864006296C5 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A53F8262C7864006296C5 /* CameraController.swift */; };
 		5B0A53FD262C789E006296C5 /* CameraControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A53FC262C789E006296C5 /* CameraControllerDelegate.swift */; };
 		5B0A5403262C7B97006296C5 /* UiView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A5402262C7B97006296C5 /* UiView+Ext.swift */; };
+		5B0A540A262C834A006296C5 /* ObjectDetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A5409262C834A006296C5 /* ObjectDetectionViewModel.swift */; };
+		5B0A540E262C8362006296C5 /* ObjectDetectionViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A540D262C8362006296C5 /* ObjectDetectionViewModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		5B0A53F8262C7864006296C5 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		5B0A53FC262C789E006296C5 /* CameraControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControllerDelegate.swift; sourceTree = "<group>"; };
 		5B0A5402262C7B97006296C5 /* UiView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiView+Ext.swift"; sourceTree = "<group>"; };
+		5B0A5409262C834A006296C5 /* ObjectDetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionViewModel.swift; sourceTree = "<group>"; };
+		5B0A540D262C8362006296C5 /* ObjectDetectionViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionViewModelDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 				5B0A5401262C7B8B006296C5 /* Extensions */,
 				5B0A53F3262C7613006296C5 /* MLModels */,
 				5B0A53F7262C781E006296C5 /* CameraLayer */,
+				5B0A5408262C831B006296C5 /* ObjectDetection */,
 				5B0A53DF262C74D3006296C5 /* ViewController.swift */,
 				5B0A53E4262C74D3006296C5 /* Assets.xcassets */,
 			);
@@ -106,6 +111,15 @@
 				5B0A5402262C7B97006296C5 /* UiView+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B0A5408262C831B006296C5 /* ObjectDetection */ = {
+			isa = PBXGroup;
+			children = (
+				5B0A5409262C834A006296C5 /* ObjectDetectionViewModel.swift */,
+				5B0A540D262C8362006296C5 /* ObjectDetectionViewModelDelegate.swift */,
+			);
+			path = ObjectDetection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +194,10 @@
 				5B0A53E0262C74D3006296C5 /* ViewController.swift in Sources */,
 				5B0A53F5262C7633006296C5 /* YOLOv3.mlkitmodel in Sources */,
 				5B0A53DC262C74D3006296C5 /* AppDelegate.swift in Sources */,
+				5B0A540A262C834A006296C5 /* ObjectDetectionViewModel.swift in Sources */,
 				5B0A53FD262C789E006296C5 /* CameraControllerDelegate.swift in Sources */,
 				5B0A53DE262C74D3006296C5 /* SceneDelegate.swift in Sources */,
+				5B0A540E262C8362006296C5 /* ObjectDetectionViewModelDelegate.swift in Sources */,
 				5B0A53F9262C7864006296C5 /* CameraController.swift in Sources */,
 				5B0A5403262C7B97006296C5 /* UiView+Ext.swift in Sources */,
 			);
