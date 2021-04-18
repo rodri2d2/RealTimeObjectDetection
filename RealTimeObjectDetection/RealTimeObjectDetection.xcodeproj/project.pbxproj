@@ -13,6 +13,9 @@
 		5B0A53E5262C74D3006296C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0A53E4262C74D3006296C5 /* Assets.xcassets */; };
 		5B0A53E8262C74D3006296C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0A53E6262C74D3006296C5 /* LaunchScreen.storyboard */; };
 		5B0A53F5262C7633006296C5 /* YOLOv3.mlkitmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A53F4262C7633006296C5 /* YOLOv3.mlkitmodel */; };
+		5B0A53F9262C7864006296C5 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A53F8262C7864006296C5 /* CameraController.swift */; };
+		5B0A53FD262C789E006296C5 /* CameraControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A53FC262C789E006296C5 /* CameraControllerDelegate.swift */; };
+		5B0A5403262C7B97006296C5 /* UiView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A5402262C7B97006296C5 /* UiView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		5B0A53E7262C74D3006296C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B0A53E9262C74D3006296C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B0A53F4262C7633006296C5 /* YOLOv3.mlkitmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3.mlkitmodel; sourceTree = "<group>"; };
+		5B0A53F8262C7864006296C5 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		5B0A53FC262C789E006296C5 /* CameraControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControllerDelegate.swift; sourceTree = "<group>"; };
+		5B0A5402262C7B97006296C5 /* UiView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,10 @@
 		5B0A53DA262C74D3006296C5 /* RealTimeObjectDetection */ = {
 			isa = PBXGroup;
 			children = (
-				5B0A53F3262C7613006296C5 /* MLModels */,
 				5B0A53F0262C74E1006296C5 /* App */,
+				5B0A5401262C7B8B006296C5 /* Extensions */,
+				5B0A53F3262C7613006296C5 /* MLModels */,
+				5B0A53F7262C781E006296C5 /* CameraLayer */,
 				5B0A53DF262C74D3006296C5 /* ViewController.swift */,
 				5B0A53E4262C74D3006296C5 /* Assets.xcassets */,
 			);
@@ -81,6 +89,23 @@
 				5B0A53F4262C7633006296C5 /* YOLOv3.mlkitmodel */,
 			);
 			path = MLModels;
+			sourceTree = "<group>";
+		};
+		5B0A53F7262C781E006296C5 /* CameraLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5B0A53F8262C7864006296C5 /* CameraController.swift */,
+				5B0A53FC262C789E006296C5 /* CameraControllerDelegate.swift */,
+			);
+			path = CameraLayer;
+			sourceTree = "<group>";
+		};
+		5B0A5401262C7B8B006296C5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B0A5402262C7B97006296C5 /* UiView+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +180,10 @@
 				5B0A53E0262C74D3006296C5 /* ViewController.swift in Sources */,
 				5B0A53F5262C7633006296C5 /* YOLOv3.mlkitmodel in Sources */,
 				5B0A53DC262C74D3006296C5 /* AppDelegate.swift in Sources */,
+				5B0A53FD262C789E006296C5 /* CameraControllerDelegate.swift in Sources */,
 				5B0A53DE262C74D3006296C5 /* SceneDelegate.swift in Sources */,
+				5B0A53F9262C7864006296C5 /* CameraController.swift in Sources */,
+				5B0A5403262C7B97006296C5 /* UiView+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
