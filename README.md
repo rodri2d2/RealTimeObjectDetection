@@ -45,6 +45,13 @@ https://developer.apple.com/machine-learning/models/
 
 ```
 
+
+<p float="left">
+<img src="https://github.com/rodri2d2/RealTimeObjectDetection/blob/feature/createMVVMProjectStructure/Gifs/sample1.gif" width="200" />
+<br />
+
+
+
 <br />
 
 ```
