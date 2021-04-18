@@ -32,6 +32,9 @@ This app recognises random objects and is able to name/classify them.
 
 
 # Samples
+
+APP NOT FINISHED YET...
+
 ```
 ¡ATENCION!
 Para poder probar esta aplicacion, debes instalar manualmente el modelo Yolov3
