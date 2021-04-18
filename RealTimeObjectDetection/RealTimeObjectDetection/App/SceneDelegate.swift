@@ -14,6 +14,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
+        
+        /*
+         
+                Better use COORDINATOR
+         
+         */
+        
+        
         /// 1. Capture the scene
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
@@ -21,7 +29,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         
         /// 3. Create view hierarchy and apply it to the window
-        let controller = ViewController()
+        let viewModel = ObjectDetectionViewModel()
+        let controller = ViewController(viewModel: viewModel)
         window?.rootViewController = controller
         
         /// 4. Make the window visible
