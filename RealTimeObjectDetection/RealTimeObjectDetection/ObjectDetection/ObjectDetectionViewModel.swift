@@ -8,8 +8,12 @@
 import Foundation
 import Vision
 
+
 class ObjectDetectionViewModel{
     var delegate: ObjectDetectionViewModelDelegate?
+    
+    var data: [CVPixelBuffer] = []
+    
 }
 
 
@@ -31,6 +35,17 @@ class ObjectDetectionViewModel{
 // MARK: - Respond to Views demands
 extension ObjectDetectionViewModel{
     
+    
+    func load(){
+        
+    }
+    
+    
+    func filteredImages(texto: String, imageBuffer: CVPixelBuffer){
+        
+    }
+    
+    
     func imageWasCaptured(imageBuffer: CVPixelBuffer){
         do {
         
@@ -51,7 +66,9 @@ extension ObjectDetectionViewModel{
                     return
                 }
                 
+            
                 if observation.confidence > 0.9 {
+                    
                     self.delegate?.didRecognizeObject(recognizedObjects: [observation])
                 }
             }

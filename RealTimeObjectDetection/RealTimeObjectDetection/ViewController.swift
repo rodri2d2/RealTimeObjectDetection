@@ -118,6 +118,7 @@ extension ViewController{
         for object in recognizedObjects{
             DispatchQueue.main.async {
                 let scaleHeight = self.previewOutput.frame.width / object.boundingBox.size.width * object.boundingBox.size.height
+                
                 let x = object.boundingBox.midX * scaleHeight
                 let y = object.boundingBox.midY * scaleHeight
                 let width = CGFloat(100)
@@ -125,7 +126,6 @@ extension ViewController{
                 self.boundingView.backgroundColor = .green
                 self.boundingView.alpha = 0.8
                 self.objectLabel.text = object.labels.first?.identifier
-                
             }
         }
     }
@@ -233,5 +233,6 @@ extension ViewController: ObjectDetectionViewModelDelegate{
     
     func didRecognizeObject(recognizedObjects: [VNRecognizedObjectObservation]) {
        self.redrawDetectionLayers(recognizedObjects: recognizedObjects)
+    
     }
 }

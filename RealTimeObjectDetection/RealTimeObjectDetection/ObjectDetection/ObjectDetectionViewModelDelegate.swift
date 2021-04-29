@@ -8,7 +8,7 @@
 import Foundation
 import Vision
 
-protocol ObjectDetectionViewModelDelegate: class {
+protocol ObjectDetectionViewModelDelegate: AnyObject {
     func didRecognizeObject(recognizedObjects: [VNRecognizedObjectObservation])
     func didNotRecognizedObject()
 }
